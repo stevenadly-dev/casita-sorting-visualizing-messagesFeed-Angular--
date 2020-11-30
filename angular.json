@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "sortingandvisualisingtask": {
@@ -25,7 +25,12 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/leaflet/dist/images/",
+                "output": "./assets"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -123,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sortingandvisualisingtask"
+    }
+  },
+  "defaultProject": "sortingandvisualisingtask",
+  "cli": {
+    "analytics": "3bc08da6-5f92-4830-83b3-529a478dbaa9"
+  }
 }

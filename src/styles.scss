@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import "sass/mixins.sass";
+@import "sass/variables.sass";
+@import "~leaflet/dist/leaflet.css";
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.happy {
+  color: #006838 !important;
+}
+.sad {
+  color: #a83a20 !important;
+}
+.normal {
+  color: #cc972c !important;
+}

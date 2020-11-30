@@ -1,0 +1,43 @@
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // margin: 30px;
+}
+
+.map-frame {
+  height: 100%;
+  position: relative;
+  #map {
+    height: 100%;
+  }
+  .description {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    padding: 1em;
+    background: #828080;
+    z-index: 999;
+
+    h3 {
+      font-size: 1.3em;
+      margin: 0 !important;
+      display: flex;
+      color: white;
+
+      span {
+        margin-left: 10px;
+        .icon-img {
+          height: 30px;
+        }
+      }
+    }
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+}
